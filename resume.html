@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Mikrani - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f3f4f6;
+        }
+        .resume-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2563eb;
+            text-align: center;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section-title {
+            color: #1e40af;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .experience-item, .education-item {
+            margin: 15px 0;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #2563eb;
+        }
+        .profile-info {
+            text-align: center;
+        }
+        .profile-info h2 {
+            color: #666;
+            margin: 0.5rem 0;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .resume-container {
+                box-shadow: none;
+            }
+        }
+        .download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #2563eb;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background-color: #1e40af;
+        }
+
+        @media print {
+            .download-btn {
+                display: none;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .resume-container {
+                padding: 20px;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+
+            .resume-container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .profile-info h2 {
+                font-size: 1.2rem;
+            }
+
+            .contact-info p {
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .experience-item h3,
+            .education-item h3 {
+                font-size: 1.1rem;
+            }
+
+            .download-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="profile-section">
+            <img src="images/profile.jpg" alt="Osama Mikrani" class="profile-image">
+            <div class="profile-info">
+                <h1>Osama Mikrani</h1>
+                <h2>Web Developer & Designer</h2>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <p>
+                Email: 07osamakhan@gmail.com | Phone: +91 70 174 449 46<br>
+                Location: Banglore, Karnataka(India)
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>
+                I am a passionate web developer with a keen eye for designing visually appealing and user-friendly interfaces. 
+                With over two years of experience in web development, I have successfully completed multiple projects and maintain 
+                a portfolio website showcasing my work.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Engineering in Computer Science</h3>
+                <p>Channabasaweshwara Institute of Technology</p>
+                <p class="date">Current - 6th Semester</p>
+                <p>CGPA: 8.2</p>
+            </div>
+            <div class="education-item">
+                <h3>10th and 12th  Grade</h3>
+                <p>Krishna Vidhyalaya Mandir (KVM), Haldwani, Nainital</p>
+                <p>10th class: Percentage: 64.5%</p>
+                <p>12th class: Percentage: 68.5%</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li>HTML5 - 95%</li>
+                        <li>CSS3 - 90%</li>
+                        <li>JavaScript - 85%</li>
+                        <li>React.js - 80%</li>
+                        <li>Bootstrap - 85%</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Backend Development</h3>
+                    <ul>
+                        <li>Node.js - 85%</li>
+                        <li>Express.js - 80%</li>
+                        <li>MySQL - 80%</li>
+                        <li>MongoDB - 75%</li>
+                        <li>REST APIs - 85%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="experience-item">
+                <h3>College-Management-System-using-DSA-in-C-CMS-</h3>
+                <p>This project is a student management system that uses structs and file handling to store, search, modify, and display student records. It primarily utilizes linear search and file-based data storage, but can be optimized with binary search or hashing for better efficiency.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Shortest-Path-finding-Between-Metro-Stations-Project-main</h3>
+                <p>The Delhi Metro Route Finder is a Java-based program that helps users determine the shortest metro route and fare between two stations. It utilizes Graph and Heap data structures, where stations are represented as nodes and distances as edges. Algorithms like Dijkstra, BFS, and DFS are used to find the shortest path, and the fare is calculated based on the total distance traveled. The program includes a metro map for better navigation, making it a useful tool for commuters.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Spam-E-mail-Detection-using-Machine-Learning</h3>
+                <p>In this project, I have developed a robust Spam Email Detection System leveraging various machine learning algorithms. The primary goal of this project is to classify emails as spam or non-spam (ham) with high accuracy, ensuring an efficient and automated filtering mechanism to enhance user experience and security.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <h3>Spotify-Clone</h3>
+            <p>I developed a responsive Spotify clone using HTML and CSS, ensuring seamless adaptability across various devices.</p>
+        </div>
+    </div>
+        <div class="section">
+            <h2 class="section-title">Tools & Technologies</h2>
+            <ul>
+                <li>Git & GitHub - 90%</li>
+                <li>npm - 80%</li>
+                <li>Responsive Design - 90%</li>
+                <li>Version Control - 85%</li>
+            </ul>
+        </div>
+    </div>
+    
+    <a href="resume.html" class="download-btn" download="Osama_Mikrani_Resume">
+        <i class="fas fa-download"></i> Download Resume
+    </a>
+</body>
+</html> 
